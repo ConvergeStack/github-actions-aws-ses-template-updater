@@ -1,0 +1,29 @@
+name: "SES Template Updater"
+description: "Updates the AWS SES email template"
+
+inputs:
+  templateName:
+    description: "SES email template name on AWS"
+    required: true
+  subjectFilePath:
+    description: "Email subject"
+    required: true
+  rawBodyFilePath:
+    description: "Email content when html is not supported by receiver"
+    required: true
+  htmlBodyFilePath:
+    description: "Email content when html is supported by receiver"
+    required: true
+  sesRegion:
+    description: "AWS SES region"
+    required: true
+  awsAccessKey:
+    description: "AWS Access Key"
+    required: true
+  awsSecretKey:
+    description: "AWS Secret Key"
+    required: true
+
+runs:
+  using: "node16"
+  main: "./index.js"

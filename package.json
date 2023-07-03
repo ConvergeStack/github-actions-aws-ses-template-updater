@@ -1,0 +1,27 @@
+{
+  "name": "github-actions-aws-ses-template-updater",
+  "version": "1.0.0",
+  "description": "AWS SES template updater",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConvergeStack/github-actions-aws-ses-template-updater.git"
+  },
+  "author": "ConvergeStack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ConvergeStack/github-actions-aws-ses-template-updater/issues"
+  },
+  "homepage": "https://github.com/ConvergeStack/github-actions-aws-ses-template-updater#readme",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@aws-sdk/client-ses": "^3.363.0",
+    "html-minifier": "^4.0.0"
+  }
+}
