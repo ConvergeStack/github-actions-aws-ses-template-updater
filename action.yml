@@ -25,5 +25,17 @@ inputs:
     required: true
 
 runs:
-  using: "node16"
-  main: "./index.js"
+  steps:
+    - name: 📍 Checkout Code
+      uses: actions/checkout@v3
+
+    - name: 🏗 Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+
+    - name: 🏗 Install npm dependencies
+      run: npm ci
+
+    - name: 🚀 Run the script
+      run: node index.js
